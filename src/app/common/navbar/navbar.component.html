@@ -1,0 +1,99 @@
+<div
+    class="navbar-area position-fixed top-0 start-0 end-0"
+    [ngClass]="{
+        'is-sticky': isSticky,
+        'white-navbar': router.url === '/index-3'
+    }"
+>
+    <div class="Harvest-nav">
+        <div class="container">
+            <nav
+                class="navbar navbar-expand-lg bg-light"
+                [class.active]="classApplied"
+            >
+                <a
+                    [ngClass]="{ 'd-none': router.url === '/index-3' }"
+                    class="navbar-brand"
+                    routerLink="/"
+                >
+                    <img src="images/logo.svg" alt="logo" />
+                </a>
+                <a
+                    *ngIf="router.url === '/index-3'"
+                    class="navbar-brand"
+                    routerLink="/"
+                >
+                    <img src="images/white-logo.svg" alt="logo" />
+                </a>
+                <button
+                    class="navbar-toggler rounded-0 p-0 border-0 shadow-none"
+                    (click)="toggleClass()"
+                    type="button"
+                >
+                    <span class="burger-menu">
+                        <span class="top-bar d-block"></span>
+                        <span class="middle-bar d-block"></span>
+                        <span class="bottom-bar d-block"></span>
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a
+                                routerLink="/"
+                                class="nav-link"
+                                routerLinkActive="active"
+                                [routerLinkActiveOptions]="{ exact: true }"
+                            >
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                routerLink="/about"
+                                class="nav-link"
+                                routerLinkActive="active"
+                                [routerLinkActiveOptions]="{ exact: true }"
+                            >
+                                About
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                routerLink="/courses"
+                                class="nav-link"
+                                routerLinkActive="active"
+                                [routerLinkActiveOptions]="{ exact: true }"
+                            >
+                                Courses
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                routerLink="/blog"
+                                class="nav-link"
+                                routerLinkActive="active"
+                                [routerLinkActiveOptions]="{ exact: true }"
+                            >
+                                Blog
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                routerLink="/contact"
+                                class="nav-link"
+                                routerLinkActive="active"
+                                [routerLinkActiveOptions]="{ exact: true }"
+                            >
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="others-option">
+                        <a routerLink="/login" class="default-btn"> Login </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>

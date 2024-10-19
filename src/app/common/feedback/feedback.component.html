@@ -1,0 +1,89 @@
+<!-- بسم الله الرحمن الرحيم -->
+<div
+    class="feedback-area ptb-120 position-relative z-1"
+    [ngClass]="{ 'd-none': router.url === '/index-3' }"
+>
+    <div class="container">
+        <div class="section-title text-center">
+            <h2 class="fw-semibold mx-auto mb-0 text-uppercase">
+                What our students say
+            </h2>
+        </div>
+        <div class="feedback-slides mx-auto">
+            <owl-carousel-o [options]="feedbackSlides">
+                <ng-template carouselSlide>
+                    <div class="single-feedback-item text-center">
+                        <p class="fw-medium">
+                            "Learning at LOGO has been an enriching experience.
+                            The instructors are not only skilled but incredibly
+                            passionate about teaching. The immersive approach
+                            has significantly boosted my confidence in speaking
+                            the language."
+                        </p>
+                        <div class="info">
+                            <img
+                                src="images/users/user4.jpg"
+                                class="rounded-circle"
+                                alt="user-image"
+                            />
+                            <h3 class="fw-semibold">Linda B. Ackerman</h3>
+                            <span class="d-block">
+                                Marketing Manager, ABC Company
+                            </span>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="single-feedback-item text-center">
+                        <p class="fw-medium">
+                            "Learning at LOGO has been an enriching experience.
+                            The instructors are not only skilled but incredibly
+                            passionate about teaching. The immersive approach
+                            has significantly boosted my confidence in speaking
+                            the language."
+                        </p>
+                        <div class="info">
+                            <img
+                                src="images/users/user1.jpg"
+                                class="rounded-circle"
+                                alt="user-image"
+                            />
+                            <h3 class="fw-semibold">James T. Warner</h3>
+                            <span class="d-block">
+                                Web Developer, XYZ Company
+                            </span>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="single-feedback-item text-center">
+                        <p class="fw-medium">
+                            "Learning at LOGO has been an enriching experience.
+                            The instructors are not only skilled but incredibly
+                            passionate about teaching. The immersive approach
+                            has significantly boosted my confidence in speaking
+                            the language."
+                        </p>
+                        <div class="info">
+                            <img
+                                src="images/users/user2.jpg"
+                                class="rounded-circle"
+                                alt="user-image"
+                            />
+                            <h3 class="fw-semibold">Macky Q. Anderson</h3>
+                            <span class="d-block">
+                                Web Desginer, Web Company
+                            </span>
+                        </div>
+                    </div>
+                </ng-template>
+            </owl-carousel-o>
+        </div>
+    </div>
+    <div class="scroll-down-text left text-uppercase d-flex align-items-center">
+        <div>
+            <img src="images/icons/bx-mouse.svg" alt="bx-mouse" />
+            Scroll Down
+        </div>
+    </div>
+</div>
