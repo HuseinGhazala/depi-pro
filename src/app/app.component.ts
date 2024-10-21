@@ -10,7 +10,7 @@ import { RouterOutlet, Router, Event, NavigationEnd } from '@angular/router';
     styleUrl: './app.component.scss',
 })
 export class AppComponent {
-    title = 'Harvest - Hussein Ghazala';
+    title = 'STEP - Hussein Ghazala';
 
     constructor(
         private router: Router,
