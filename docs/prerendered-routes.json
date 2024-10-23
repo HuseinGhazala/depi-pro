@@ -1,0 +1,17 @@
+{
+  "routes": [
+    "/",
+    "/about",
+    "/blog",
+    "/blog-details",
+    "/contact",
+    "/course-details",
+    "/courses",
+    "/login",
+    "/privacy-policy",
+    "/register",
+    "/team",
+    "/team-details",
+    "/terms-conditions"
+  ]
+}
